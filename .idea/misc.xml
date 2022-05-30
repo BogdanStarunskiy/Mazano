@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_books.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_games.xml" value="0.25" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_books.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_games.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_movies.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/menu/menu.xml" value="0.18802083333333333" />
       </map>
     </option>
   </component>
