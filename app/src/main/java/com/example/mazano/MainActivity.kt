@@ -8,8 +8,9 @@ import com.example.mazano.ui.books.BooksFragment
 import com.example.mazano.ui.games.GamesFragment
 import com.example.mazano.ui.movies.MoviesFragment
 import com.ismaeldivita.chipnavigation.ChipNavigationBar
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var menu:ChipNavigationBar
