@@ -20,7 +20,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/bottomNavHolder"
         android:layout_width="match_parent"
-        android:layout_margin="5dp"
+        android:layout_margin="15dp"
         app:cardCornerRadius="16dp"
         android:backgroundTint="@color/defaultSecondaryColor"
         app:layout_constraintBottom_toBottomOf="parent"
