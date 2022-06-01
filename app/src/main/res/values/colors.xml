@@ -7,7 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="defaultSecondaryColor">#212129</color>
-    <color name="primaryDefaultColor">#FFD803</color>
-    <color name="selectedColor">#FF7A00</color>
+    <color name="defaultSecondaryColor">#546FE5</color>
+    <color name="primaryDefaultColor">#070D2D</color>
+    <color name="bottomNavDefaultColor">#010725</color>
+    <color name="selectedColor">#FFFFFFFF</color>
+    <color name="gamesTitleColor">#95928E</color>
+    <color name="bottomGradientColor">#061047</color>
+    <color name="topGradientColor">#262464</color>
+    <color name="bottomNavUnselectedColor">#757575</color>
+
 </resources>

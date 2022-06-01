@@ -13,35 +13,27 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavHolder"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/nav" />
+        app:navGraph="@navigation/nav"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/bottomNavHolder"
         android:layout_width="match_parent"
         android:layout_margin="5dp"
         app:cardCornerRadius="16dp"
-        android:backgroundTint="@color/defaultSecondaryColor"
+        android:elevation="2342342342423423dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_height="73dp">
 
-        <com.ismaeldivita.chipnavigation.ChipNavigationBar
-            android:id="@+id/menu"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavBar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cnb_menuResource="@menu/menu"
-            android:layout_margin="10dp"
-            app:cnb_orientationMode="horizontal"
-            app:cnb_addBottomInset="false"
-            app:cnb_addLeftInset="false"
-            app:cnb_addRightInset="false"
-            app:cnb_addTopInset="false"
-            app:cnb_unselectedColor="@color/primaryDefaultColor"
-            app:cnb_badgeColor="@color/primaryDefaultColor"
-            app:cnb_radius="8dp"
-            app:cnb_iconSize="40dp" />
-
+            android:layout_height="match_parent"
+            app:menu="@menu/menu"
+            app:itemIconTint="@drawable/bottom_nav_selector"
+            app:itemIconSize="50dp"
+            android:background="@color/bottomNavDefaultColor"/>
     </androidx.cardview.widget.CardView>
 
 
