@@ -1,30 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/games"
-        android:title="@string/games"
-        app:cnb_iconTintMode="src_in"
+        android:id="@+id/gamesFragment"
+        android:title=""
         android:icon="@drawable/ic_controller"
-        app:cnb_textColor="@color/selectedColor"
-        app:cnb_iconColor="@color/selectedColor"
-        android:enabled="true"
         />
     <item
-        android:id="@+id/movies"
-        android:title="@string/movies"
-        app:cnb_iconTintMode="src_in"
+        android:id="@+id/moviesFragment"
+        android:title=""
         android:icon="@drawable/ic_popcorn"
-        app:cnb_textColor="@color/selectedColor"
-        app:cnb_iconColor="@color/selectedColor"
       />
     <item
-        android:id="@+id/books"
-        android:title="@string/books"
-        app:cnb_iconTintMode="src_in"
-        app:cnb_textColor="@color/selectedColor"
-        app:cnb_iconColor="@color/selectedColor"
+        android:id="@+id/booksFragment"
+        android:title=""
         android:icon="@drawable/ic_book"
         />
 </menu>
