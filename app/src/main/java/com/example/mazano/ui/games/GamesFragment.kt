@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.mazano.R
+import com.example.mazano.ui.movies.MoviesFragment
 
 
 class GamesFragment : Fragment() {
@@ -18,6 +19,15 @@ class GamesFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_games, container, false)
     }
+    companion object {
 
+        @JvmStatic
+        fun newInstance() =
+            GamesFragment().apply {
+                arguments = Bundle().apply {
+
+                }
+            }
+    }
 
 }

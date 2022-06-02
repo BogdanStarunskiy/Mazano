@@ -7,34 +7,30 @@
     tools:context=".MainActivity">
 
 
-    <androidx.fragment.app.FragmentContainerView
+    <FrameLayout
         android:id="@+id/fragmentContainerView"
-        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/nav"/>
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/bottomNavHolder"
-        android:layout_width="match_parent"
-        android:layout_margin="5dp"
-        app:cardCornerRadius="16dp"
-        android:elevation="2342342342423423dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_height="73dp">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavBar"
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/bottomNavigation"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:menu="@menu/menu"
-            app:itemIconTint="@drawable/bottom_nav_selector"
-            app:itemIconSize="50dp"
-            android:background="@color/bottomNavDefaultColor"/>
-    </androidx.cardview.widget.CardView>
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:mbn_circleColor="@color/bottomNavDefaultColor"
+            app:mbn_backgroundBottomColor="@color/bottomNavDefaultColor"
+            app:mbn_countBackgroundColor="@color/bottomNavDefaultColor"
+            app:mbn_countTextColor="@color/bottomNavDefaultColor"
+            app:mbn_defaultIconColor="@color/bottomNavUnselectedColor"
+            app:mbn_rippleColor="@color/white"
+            app:mbn_selectedIconColor="@color/white"
+            app:mbn_shadowColor="#1f212121"
+            />
+
 
 
 
