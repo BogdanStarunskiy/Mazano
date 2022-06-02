@@ -12,6 +12,7 @@ import com.example.mazano.databinding.ActivityMainBinding
 import com.example.mazano.ui.books.BooksFragment
 import com.example.mazano.ui.games.GamesFragment
 import com.example.mazano.ui.movies.MoviesFragment
+import com.example.mazano.ui.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -33,11 +34,13 @@ class MainActivity : AppCompatActivity() {
         bottomNavigation.add(MeowBottomNavigation.Model(1, R.drawable.ic_controller))
         bottomNavigation.add(MeowBottomNavigation.Model(2, R.drawable.ic_popcorn))
         bottomNavigation.add(MeowBottomNavigation.Model(3, R.drawable.ic_book))
+        bottomNavigation.add(MeowBottomNavigation.Model(4, R.drawable.ic_profile))
         bottomNavigation.setOnClickMenuListener {
             when(it.id){
                 1->replaceFragments(GamesFragment.newInstance())
                 2->replaceFragments(MoviesFragment.newInstance())
                 3->replaceFragments(BooksFragment.newInstance())
+                4->replaceFragments(ProfileFragment.newInstance())
             }
         }
     }
