@@ -11,28 +11,25 @@
         android:id="@+id/fragmentContainerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:navGraph="@navigation/mobile_navigation" />
 
 
-
-        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
-            android:id="@+id/bottomNavigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:mbn_circleColor="@color/bottomNavDefaultColor"
-            app:mbn_backgroundBottomColor="@color/bottomNavDefaultColor"
-            app:mbn_countBackgroundColor="@color/bottomNavDefaultColor"
-            app:mbn_countTextColor="@color/bottomNavDefaultColor"
-            app:mbn_defaultIconColor="@color/bottomNavUnselectedColor"
-            app:mbn_rippleColor="@color/white"
-            app:mbn_selectedIconColor="@color/white"
-            app:mbn_shadowColor="#1f212121"
-            />
-
-
-
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:mbn_backgroundBottomColor="@color/bottomNavDefaultColor"
+        app:mbn_circleColor="@color/bottomNavDefaultColor"
+        app:mbn_countBackgroundColor="@color/bottomNavDefaultColor"
+        app:mbn_countTextColor="@color/bottomNavDefaultColor"
+        app:mbn_defaultIconColor="@color/bottomNavUnselectedColor"
+        app:mbn_rippleColor="@color/white"
+        app:mbn_selectedIconColor="@color/white"
+        app:mbn_shadowColor="#1f212121" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
