@@ -1,10 +1,10 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
     id 'kotlin-kapt'
     id("dagger.hilt.android.plugin")
 }
-
 
 android {
     compileSdk 32
@@ -38,13 +38,17 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation("com.google.dagger:hilt-android:2.42")
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.0.5'
     kapt("com.google.dagger:hilt-android-compiler:2.42")
+    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
@@ -53,6 +57,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.etebarian:meow-bottom-navigation:1.2.0'
 }
+
 kapt {
     correctErrorTypes = true
 }
