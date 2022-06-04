@@ -1,29 +1,19 @@
 package com.example.mazano.ui.auth
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
-import androidx.fragment.app.Fragment
+import androidx.core.view.isVisible
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.example.mazano.R
 import com.example.mazano.databinding.FragmentAuthBinding
+import com.example.mazano.utils.BaseFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-class AuthFragment : Fragment() {
-    private lateinit var binding: FragmentAuthBinding
+class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::inflate) {
     private lateinit var auth: FirebaseAuth
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentAuthBinding.inflate(inflater, container, false)
-        return binding.root
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -34,7 +24,7 @@ class AuthFragment : Fragment() {
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        Toast.makeText(context, "login successful", Toast.LENGTH_SHORT).show()
+
                     } else {
                         Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
                     }
@@ -47,7 +37,7 @@ class AuthFragment : Fragment() {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        Toast.makeText(context, "login successful", Toast.LENGTH_SHORT).show()
+
                     } else {
                         Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
                     }
@@ -57,13 +47,7 @@ class AuthFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        requireActivity().findViewById<MeowBottomNavigation>(R.id.bottomNavigation).visibility = View.GONE
+        requireActivity().findViewById<MeowBottomNavigation>(R.id.bottomNavigation).isVisible = false
     }
-    companion object {
-        @JvmStatic
-        fun newInstance() =
-            AuthFragment().apply {
-                arguments = Bundle().apply {}
-            }
-    }
+
 }

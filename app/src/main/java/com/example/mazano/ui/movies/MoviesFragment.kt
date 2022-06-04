@@ -6,23 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.mazano.R
+import com.example.mazano.databinding.FragmentMoviesBinding
+import com.example.mazano.utils.BaseFragment
 import dagger.hilt.EntryPoint
 
-class MoviesFragment : Fragment() {
-
-
-
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_movies, container, false)
-    }
+class MoviesFragment : BaseFragment<FragmentMoviesBinding>(FragmentMoviesBinding::inflate) {
 
     companion object {
-
         @JvmStatic
         fun newInstance() =
             MoviesFragment().apply {

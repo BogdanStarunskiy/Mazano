@@ -1,26 +1,27 @@
 package com.example.mazano.ui.games
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import com.example.mazano.R
-import com.example.mazano.ui.movies.MoviesFragment
+import com.example.mazano.databinding.FragmentGamesBinding
+import com.example.mazano.utils.BaseFragment
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 
-class GamesFragment : Fragment() {
+class GamesFragment : BaseFragment<FragmentGamesBinding>(FragmentGamesBinding::inflate) {
+    private lateinit var auth: FirebaseAuth
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        auth = Firebase.auth
+        val currentUser = auth.currentUser
+        if(currentUser == null){
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_games, container, false)
+        }
     }
-    companion object {
 
+    companion object {
         @JvmStatic
         fun newInstance() =
             GamesFragment().apply {

@@ -9,7 +9,11 @@
         android:id="@+id/gamesFragment"
         android:name="com.example.mazano.ui.games.GamesFragment"
         android:label="fragment_games"
-        tools:layout="@layout/fragment_games" />
+        tools:layout="@layout/fragment_games" >
+        <action
+            android:id="@+id/action_gamesFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+    </fragment>
     <fragment
         android:id="@+id/moviesFragment"
         android:name="com.example.mazano.ui.movies.MoviesFragment"
