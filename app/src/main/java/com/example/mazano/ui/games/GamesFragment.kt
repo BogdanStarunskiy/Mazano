@@ -2,6 +2,9 @@ package com.example.mazano.ui.games
 
 import android.os.Bundle
 import android.view.View
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+import com.example.mazano.R
 import com.example.mazano.databinding.FragmentGamesBinding
 import com.example.mazano.utils.BaseFragment
 import com.google.firebase.auth.FirebaseAuth
@@ -16,9 +19,8 @@ class GamesFragment : BaseFragment<FragmentGamesBinding>(FragmentGamesBinding::i
         super.onViewCreated(view, savedInstanceState)
         auth = Firebase.auth
         val currentUser = auth.currentUser
-        if(currentUser == null){
-
-        }
+        if(currentUser == null)
+            requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_gamesFragment_to_authFragment)
     }
 
     companion object {

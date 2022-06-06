@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.core.view.isVisible
+import androidx.navigation.findNavController
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.example.mazano.R
 import com.example.mazano.databinding.FragmentAuthBinding
@@ -24,7 +25,7 @@ class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::infl
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-
+                        requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_authFragment_to_gamesFragment)
                     } else {
                         Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
                     }
@@ -37,7 +38,7 @@ class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::infl
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-
+                        requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_authFragment_to_gamesFragment)
                     } else {
                         Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
                     }

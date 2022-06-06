@@ -3,24 +3,26 @@ package com.example.mazano
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.example.mazano.databinding.ActivityMainBinding
 import com.example.mazano.ui.books.BooksFragment
 import com.example.mazano.ui.games.GamesFragment
 import com.example.mazano.ui.movies.MoviesFragment
 import com.example.mazano.ui.profile.ProfileFragment
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        initBottomNavBar()
+       // initBottomNavBar()
     }
 
     private fun initBottomNavBar() {
