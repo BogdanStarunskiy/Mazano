@@ -35,7 +35,9 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigationItems = mutableListOf(
             CurvedBottomNavigation.Model(GAMES_ITEM, "", R.drawable.ic_controller),
             CurvedBottomNavigation.Model(MOVIES_ITEM, "", R.drawable.ic_popcorn),
-            CurvedBottomNavigation.Model(BOOKS_ITEM, "", R.drawable.ic_book)
+            CurvedBottomNavigation.Model(BOOKS_ITEM, "", R.drawable.ic_book),
+            CurvedBottomNavigation.Model(PROFILE_ITEM, "", R.drawable.ic_profile),
+            CurvedBottomNavigation.Model(SEARCH_ITEM, "", R.drawable.ic_search)
 
         )
         binding.bottomNavigation.apply {
@@ -57,6 +59,12 @@ class MainActivity : AppCompatActivity() {
                 BOOKS_ITEM -> {
                     navController.popBackStack(R.id.moviesFragment, false)
                 }
+                PROFILE_ITEM -> {
+                    navController.popBackStack(R.id.booksFragment, false)
+                }
+                SEARCH_ITEM -> {
+                    navController.popBackStack(R.id.profileFragment, false)
+                }
 
                 else -> {
                     navController.navigateUp()
@@ -70,6 +78,8 @@ class MainActivity : AppCompatActivity() {
         const val GAMES_ITEM = R.id.gamesFragment
         const val MOVIES_ITEM = R.id.moviesFragment
         const val BOOKS_ITEM = R.id.booksFragment
+        const val PROFILE_ITEM = R.id.profileFragment
+        const val SEARCH_ITEM = R.id.searchFragment
 
     }
 

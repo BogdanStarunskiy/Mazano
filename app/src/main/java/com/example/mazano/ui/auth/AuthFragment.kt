@@ -26,6 +26,8 @@ class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::infl
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_authFragment_to_gamesFragment)
+                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).isVisible = true
+
                     } else {
                         Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
                     }
@@ -39,6 +41,7 @@ class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::infl
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_authFragment_to_gamesFragment)
+                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).isVisible = true
                     } else {
                         Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
                     }
