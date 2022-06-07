@@ -5,13 +5,13 @@ import android.view.View
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.navigation.findNavController
-import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.example.mazano.R
 import com.example.mazano.databinding.FragmentAuthBinding
 import com.example.mazano.utils.BaseFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.qamar.curvedbottomnaviagtion.CurvedBottomNavigation
 
 class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::inflate) {
     private lateinit var auth: FirebaseAuth
@@ -48,7 +48,7 @@ class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::infl
 
     override fun onStart() {
         super.onStart()
-        requireActivity().findViewById<MeowBottomNavigation>(R.id.bottomNavigation).isVisible = false
+        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).isVisible = false
     }
 
 }
