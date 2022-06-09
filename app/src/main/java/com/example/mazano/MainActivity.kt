@@ -4,54 +4,83 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
-import com.etebarian.meowbottomnavigation.MeowBottomNavigation
+import androidx.navigation.fragment.NavHostFragment
 import com.example.mazano.databinding.ActivityMainBinding
 import com.example.mazano.ui.books.BooksFragment
 import com.example.mazano.ui.games.GamesFragment
 import com.example.mazano.ui.movies.MoviesFragment
 import com.example.mazano.ui.profile.ProfileFragment
+import com.qamar.curvedbottomnaviagtion.CurvedBottomNavigation
 
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    lateinit var navController: NavController
-
+    private lateinit var navController:NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        initBottomNavBar()
+        initNavHost()
+        setUpBottomNavigation()
     }
 
-    private fun initBottomNavBar() {
-        val bottomNavigation = binding.bottomNavigation
-        addFragments(GamesFragment.newInstance())
-        bottomNavigation.show(1)
-        bottomNavigation.add(MeowBottomNavigation.Model(1, R.drawable.ic_controller))
-        bottomNavigation.add(MeowBottomNavigation.Model(2, R.drawable.ic_popcorn))
-        bottomNavigation.add(MeowBottomNavigation.Model(3, R.drawable.ic_book))
-        bottomNavigation.add(MeowBottomNavigation.Model(4, R.drawable.ic_profile))
-        bottomNavigation.setOnClickMenuListener {
-            when (it.id) {
-                1 -> replaceFragments(GamesFragment.newInstance())
-                2 -> replaceFragments(MoviesFragment.newInstance())
-                3 -> replaceFragments(BooksFragment.newInstance())
-                4 -> replaceFragments(ProfileFragment.newInstance())
+
+    private fun initNavHost() {
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        navController = navHostFragment.navController
+    }
+
+
+    private fun setUpBottomNavigation()  {
+        val bottomNavigationItems = mutableListOf(
+            CurvedBottomNavigation.Model(GAMES_ITEM, "", R.drawable.ic_controller),
+            CurvedBottomNavigation.Model(MOVIES_ITEM, "", R.drawable.ic_popcorn),
+            CurvedBottomNavigation.Model(BOOKS_ITEM, "", R.drawable.ic_book),
+            CurvedBottomNavigation.Model(PROFILE_ITEM, "", R.drawable.ic_profile),
+            CurvedBottomNavigation.Model(SEARCH_ITEM, "", R.drawable.ic_search)
+
+        )
+        binding.bottomNavigation.apply {
+            bottomNavigationItems.forEach { add(it) }
+            setOnClickMenuListener {
+                navController.navigate(it.id)
+            }
+            setupNavController(navController)
+        }
+    }
+    override fun onBackPressed() {
+        if (navController.currentDestination!!.id == GAMES_ITEM)
+            super.onBackPressed()
+        else {
+            when (navController.currentDestination!!.id) {
+                MOVIES_ITEM -> {
+                    navController.popBackStack(R.id.gamesFragment, false)
+                }
+                BOOKS_ITEM -> {
+                    navController.popBackStack(R.id.moviesFragment, false)
+                }
+                PROFILE_ITEM -> {
+                    navController.popBackStack(R.id.booksFragment, false)
+                }
+                SEARCH_ITEM -> {
+                    navController.popBackStack(R.id.profileFragment, false)
+                }
+
+                else -> {
+                    navController.navigateUp()
+                }
             }
         }
     }
 
-    private fun replaceFragments(fragment: Fragment) {
-        val trans = supportFragmentManager.beginTransaction()
-        trans.replace(R.id.fragmentContainerView, fragment)
-            .addToBackStack(Fragment::class.java.simpleName).commit()
-    }
 
-    private fun addFragments(fragment: Fragment) {
-        val trans = supportFragmentManager.beginTransaction()
-        trans.add(R.id.fragmentContainerView, fragment)
-            .addToBackStack(Fragment::class.java.simpleName).commit()
-    }
+    companion object {
+        const val GAMES_ITEM = R.id.gamesFragment
+        const val MOVIES_ITEM = R.id.moviesFragment
+        const val BOOKS_ITEM = R.id.booksFragment
+        const val PROFILE_ITEM = R.id.profileFragment
+        const val SEARCH_ITEM = R.id.searchFragment
 
+    }
 
 }

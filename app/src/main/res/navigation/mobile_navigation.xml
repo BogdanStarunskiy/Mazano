@@ -6,24 +6,11 @@
     app:startDestination="@id/gamesFragment">
 
     <fragment
-        android:id="@+id/gamesFragment"
-        android:name="com.example.mazano.ui.games.GamesFragment"
-        android:label="fragment_games"
-        tools:layout="@layout/fragment_games" >
-        <action
-            android:id="@+id/action_gamesFragment_to_authFragment"
-            app:destination="@id/authFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/moviesFragment"
-        android:name="com.example.mazano.ui.movies.MoviesFragment"
-        android:label="fragment_movies"
-        tools:layout="@layout/fragment_movies" />
-    <fragment
         android:id="@+id/booksFragment"
         android:name="com.example.mazano.ui.books.BooksFragment"
         android:label="fragment_books"
-        tools:layout="@layout/fragment_books" />
+        tools:layout="@layout/fragment_books" >
+    </fragment>
     <fragment
         android:id="@+id/authFragment"
         android:name="com.example.mazano.ui.auth.AuthFragment"
@@ -33,4 +20,28 @@
             android:id="@+id/action_authFragment_to_gamesFragment"
             app:destination="@id/gamesFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.example.mazano.ui.movies.MoviesFragment"
+        android:label="fragment_movies"
+        tools:layout="@layout/fragment_movies" />
+    <fragment
+        android:id="@+id/gamesFragment"
+        android:name="com.example.mazano.ui.games.GamesFragment"
+        android:label="fragment_games"
+        tools:layout="@layout/fragment_games" >
+        <action
+            android:id="@+id/action_gamesFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mazano.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.mazano.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
 </navigation>

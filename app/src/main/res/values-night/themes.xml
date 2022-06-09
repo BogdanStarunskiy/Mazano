@@ -12,8 +12,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/topGradientColor</item>
         <!-- Customize your theme here. -->
-        <item name="android:windowBackground">#000000</item>
-        <item name="android:colorBackground">#000000</item>
     </style>
     <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
         <item name="cornerSize">50%</item>

@@ -9,6 +9,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:defaultNavHost="true"
@@ -19,21 +20,24 @@
         app:navGraph="@navigation/mobile_navigation" />
 
 
-    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+
+    <com.qamar.curvedbottomnaviagtion.CurvedBottomNavigation
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="4545454545454dp"
+        app:cbn_background="@color/bottomNavDefaultColor"
+        app:cbn_fabColor="@color/bottomNavDefaultColor"
+        app:cbn_iconColor="@color/bottomNavUnselectedColor"
+        app:cbn_height="76dp"
+        app:cbn_icon_size="30dp"
+        app:cbn_curve_radius="15dp"
+        app:cbn_selected_icon_size="48dp"
+        app:cbn_selectedIconColor="@color/white"
+        app:cbn_titleColor="@color/bottomNavUnselectedColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:mbn_backgroundBottomColor="@color/bottomNavDefaultColor"
-        app:mbn_circleColor="@color/bottomNavDefaultColor"
-        app:mbn_countBackgroundColor="@color/bottomNavDefaultColor"
-        app:mbn_countTextColor="@color/bottomNavDefaultColor"
-        app:mbn_defaultIconColor="@color/bottomNavUnselectedColor"
-        app:mbn_rippleColor="@color/white"
-        app:mbn_selectedIconColor="@color/white"
-        app:mbn_shadowColor="#1f212121" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

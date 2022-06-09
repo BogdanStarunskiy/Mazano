@@ -2,15 +2,16 @@
     <string name="app_name">Mazano</string>
     <string name="games">Games</string>
     <string name="movies">Movies</string>
-    <string name="books">Books</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="settings">Settings</string>
+    <string name="books">Books</string>
+    <string name="search">Search</string>
+    <string name="mazano_logo">Mazano logo</string>
+    <!-- Auth -->
     <string name="forgot_password">Forgot password?</string>
     <string name="log_in">Log in</string>
     <string name="or">or</string>
     <string name="sign_up">Sign up</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="mazano_logo">Mazano logo</string>
+
 </resources>
