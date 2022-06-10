@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.295" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/drawable/gradient_background.xml" value="0.295" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/drawable/ic_controller.xml" value="0.2755" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/drawable/ic_search.xml" value="0.1935" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/drawable/ic_settings.xml" value="0.1935" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/category_recycler_item.xml" value="0.18541666666666667" />
@@ -12,8 +14,9 @@
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_games.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_movies.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
-        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_search.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_search.xml" value="0.33" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/recycler_item.xml" value="0.5041705282669138" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/search_recycler_item.xml" value="0.5" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/menu/menu.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/drawable/ic_book.xml" value="0.139" />
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/drawable/top_beard_background.xml" value="0.139" />

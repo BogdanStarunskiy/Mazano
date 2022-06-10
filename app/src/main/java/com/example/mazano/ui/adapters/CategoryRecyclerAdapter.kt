@@ -8,12 +8,7 @@ import com.example.mazano.models.ItemModel
 
 
 class CategoryRecyclerAdapter:RecyclerView.Adapter<CategoryRecyclerAdapter.CategoryViewHolder>() {
-    var users: List<ItemModel> = emptyList()
-        set(newValue) {
-            field = newValue
 
-            notifyDataSetChanged()
-        }
     class CategoryViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView){
         val binding = RecyclerItemBinding.bind(itemView)
         fun bind(model:ItemModel){
