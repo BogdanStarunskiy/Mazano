@@ -19,6 +19,18 @@
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_books.xml" value="0.25" />
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_games.xml" value="0.25" />
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_movies.xml" value="0.25" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/drawable/ic_book.xml" value="0.19" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/drawable/round_button.xml" value="0.19" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/drawable/roundcorner.xml" value="0.19" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/layout/category_recycler_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/layout/fragment_auth.xml" value="0.2" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/layout/fragment_books.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/layout/fragment_details.xml" value="0.264" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/layout/fragment_games.xml" value="0.151268115942029" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/layout/fragment_profile.xml" value="0.151268115942029" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/layout/fragment_search.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/layout/recycler_item.xml" value="0.2" />
       </map>
     </option>
   </component>
