@@ -1,5 +1,7 @@
 package com.example.mazano.di
 
+import com.example.mazano.retrofit.movie.MovieService
+import com.example.mazano.utils.MOVIE_BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,10 +16,11 @@ object MovieModule {
 
     @Singleton
     @Provides
-    fun provideRetrofit(): Retrofit {
+    fun provideRetrofit(): MovieService {
         return Retrofit.Builder()
-            .baseUrl("BASE URL")
+            .baseUrl(MOVIE_BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+            .create(MovieService::class.java)
     }
 }

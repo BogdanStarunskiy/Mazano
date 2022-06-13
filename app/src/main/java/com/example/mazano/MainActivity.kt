@@ -2,17 +2,13 @@ package com.example.mazano
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.mazano.databinding.ActivityMainBinding
-import com.example.mazano.ui.books.BooksFragment
-import com.example.mazano.ui.games.GamesFragment
-import com.example.mazano.ui.movies.MoviesFragment
-import com.example.mazano.ui.profile.ProfileFragment
 import com.qamar.curvedbottomnaviagtion.CurvedBottomNavigation
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController:NavController
@@ -80,7 +76,6 @@ class MainActivity : AppCompatActivity() {
         const val BOOKS_ITEM = R.id.booksFragment
         const val PROFILE_ITEM = R.id.profileFragment
         const val SEARCH_ITEM = R.id.searchFragment
-
     }
 
 }

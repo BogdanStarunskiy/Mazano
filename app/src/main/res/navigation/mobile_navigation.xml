@@ -22,9 +22,9 @@
     </fragment>
     <fragment
         android:id="@+id/moviesFragment"
-        android:name="com.example.mazano.ui.movies.MoviesFragment"
+        android:name="com.example.mazano.ui.movies.MovieFragment"
         android:label="fragment_movies"
-        tools:layout="@layout/fragment_movies" />
+        tools:layout="@layout/fragment_movie" />
     <fragment
         android:id="@+id/gamesFragment"
         android:name="com.example.mazano.ui.games.GamesFragment"

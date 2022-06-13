@@ -3,7 +3,6 @@ package com.example.mazano.ui.games
 import android.os.Bundle
 import android.view.View
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.example.mazano.R
 import com.example.mazano.databinding.FragmentGamesBinding
 import com.example.mazano.utils.BaseFragment
