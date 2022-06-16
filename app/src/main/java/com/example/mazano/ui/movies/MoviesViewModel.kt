@@ -1,6 +1,5 @@
 package com.example.mazano.ui.movies
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.example.mazano.models.movie.MovieModel
 import com.example.mazano.retrofit.movie.MovieService

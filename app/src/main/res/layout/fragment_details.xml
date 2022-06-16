@@ -43,6 +43,7 @@
             android:src="@drawable/play_button_img"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -113,19 +114,17 @@
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
+        android:layout_marginBottom="10dp"
         android:id="@+id/filmName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:text="Random film"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/materialCardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247" />
+        app:layout_constraintBottom_toBottomOf="@+id/film_logo"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/backButton"
