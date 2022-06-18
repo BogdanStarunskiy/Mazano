@@ -7,11 +7,11 @@ import com.example.mazano.databinding.RecyclerItemBinding
 import com.example.mazano.models.ItemModel
 
 
-class CategoryRecyclerAdapter:RecyclerView.Adapter<CategoryRecyclerAdapter.CategoryViewHolder>() {
+class CategoryRecyclerAdapter : RecyclerView.Adapter<CategoryRecyclerAdapter.CategoryViewHolder>() {
 
-    class CategoryViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView){
-        val binding = RecyclerItemBinding.bind(itemView)
-        fun bind(model:ItemModel){
+    class CategoryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val binding = RecyclerItemBinding.bind(itemView)
+        fun bind(model: ItemModel) {
             binding.title.text = model.title
 
         }

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".ui.welcome_screens.movies.WelcomeMoviesFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/moviesAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        android:scaleX="-1.6"
+        android:scaleY="1.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/eating_popcorn" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/welcomeMovies1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="@string/welcomeMazano"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/moviesAnimation" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/welcomeMovies2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="@string/mazano"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/welcomeMovies1"
+        app:layout_constraintTop_toBottomOf="@id/moviesAnimation" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/welcomeMovies3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:padding="5dp"
+        android:text="@string/welcomeMovies1"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMovies1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/welcomeGames3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/welcomeMovies2"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/welcomeMovies3"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMovies2" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/welcomeGames4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:lines="2"
+        android:text="@string/welcomeMovies3"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMovies3" />
+
+    <LinearLayout
+        android:id="@+id/progressFirst"
+        android:layout_width="14dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginBottom="103dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/progressSecond" />
+
+    <LinearLayout
+        android:id="@+id/progressSecond"
+        android:layout_width="14dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="103dp"
+        android:background="@color/gray_search"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/progressThird"
+        android:layout_width="14dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginBottom="103dp"
+        android:background="@color/gray_search"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/progressSecond" />
+
+
+    <LinearLayout
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow_right" />
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/skip"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

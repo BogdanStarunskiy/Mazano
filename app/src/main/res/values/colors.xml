@@ -20,5 +20,9 @@
     <color name="blue_54">#546FE4</color>
     <color name="gray_8D">#8D8989</color>
     <color name="gray_search">#D9D9D9</color>
+    <color name="yellow">#FDE24F</color>
+    <color name="turquoise">#00EBC7</color>
+    <color name="crimson">#FF5470</color>
+
 
 </resources>
