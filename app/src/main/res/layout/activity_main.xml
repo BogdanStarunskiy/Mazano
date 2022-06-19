@@ -20,20 +20,19 @@
         app:navGraph="@navigation/mobile_navigation" />
 
 
-
     <com.qamar.curvedbottomnaviagtion.CurvedBottomNavigation
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="4545454545454dp"
         app:cbn_background="@color/bottomNavDefaultColor"
+        app:cbn_curve_radius="15dp"
         app:cbn_fabColor="@color/bottomNavDefaultColor"
-        app:cbn_iconColor="@color/bottomNavUnselectedColor"
         app:cbn_height="76dp"
+        app:cbn_iconColor="@color/bottomNavUnselectedColor"
         app:cbn_icon_size="20dp"
-        app:cbn_curve_radius="25dp"
-        app:cbn_selected_icon_size="48dp"
         app:cbn_selectedIconColor="@color/white"
+        app:cbn_selected_icon_size="48dp"
         app:cbn_titleColor="@color/bottomNavUnselectedColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

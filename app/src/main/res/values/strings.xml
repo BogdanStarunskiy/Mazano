@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Mazano</string>
+    <string name="mazano">Mazano!</string>
     <string name="games">Games</string>
     <string name="movies">Movies</string>
     <string name="settings">Settings</string>
@@ -14,7 +15,25 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="comedy">Comedy</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="year">Year</string>
+    <string name="time">Time</string>
+    <string name="description">Description:</string>
+    <string name="saved">Saved</string>
+    <string name="welcomeBooks1">And finally here you can find</string>
+    <string name="welcomeBooks2">book</string>
+    <string name="welcomeBooks4">the</string>
+    <string name="welcomeBooks3">you want to read!</string>
+    <string name="getStarted">Get started</string>
+    <string name="welcomeGames1">And also here you can find</string>
+    <string name="welcomeGames2">the</string>
+    <string name="welcomeGames3">game</string>
+    <string name="welcomeGames4">you need!</string>
+    <string name="welcomeMovies1">Here you can find the</string>
+    <string name="welcomeMovies2">movie</string>
+    <string name="welcomeMovies3">you need and watch it with \n great pleasure</string>
+    <string name="welcomeMazano">Welcome to</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+
 
 </resources>
