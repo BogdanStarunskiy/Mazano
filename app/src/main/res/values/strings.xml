@@ -16,5 +16,16 @@
     <string name="comedy">Comedy</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Year">Year</string>
+    <string name="Year_exsample">2020</string>
+    <string name="time">Time</string>
+    <string name="time_exsample">2 h 20 min</string>
+    <string name="film_description">Description:</string>
+    <string name="text_exsample">Vin Diesel’s Dominic Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic Toretto is leading a quiet life off the grid with Letty and his son</string>
+    <string name="name_exsample">Random film</string>
+    <string name="film_head_image">film_head_image</string>
+    <string name="play_button">play_button</string>
+    <string name="back_button">back_button</string>
+    <string name="favorite_button">favorite_button</string>
 
 </resources>

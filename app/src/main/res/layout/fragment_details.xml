@@ -9,6 +9,7 @@
     tools:context=".ui.details.DetailsFragment">
 
     <ImageView
+        android:contentDescription="@string/film_head_image"
         android:id="@+id/film_logo"
         android:layout_width="match_parent"
         android:layout_height="220sp"
@@ -32,6 +33,7 @@
 
 
         <ImageButton
+            android:contentDescription="@string/play_button"
             android:id="@+id/playButton"
             android:layout_width="70dp"
             android:layout_height="70dp"
@@ -49,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="10dp"
-            android:text="Year"
+            android:text="@string/Year"
             android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold"/>
@@ -59,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="50dp"
-            android:text="2020"
+            android:text="@string/Year_exsample"
             android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold"/>
@@ -68,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="165dp"
             android:layout_marginVertical="10dp"
-            android:text="Time"
+            android:text="@string/time"
             android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -78,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="140dp"
             android:layout_marginVertical="50dp"
-            android:text="2 h 20 min"
+            android:text="@string/time_exsample"
             android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -94,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="105dp"
-            android:text="Description:"
+            android:text="@string/film_description"
             android:textColor="@color/white"
             android:textSize="33sp"
             android:textStyle="bold"/>
@@ -105,7 +107,7 @@
             android:layout_height="315dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="160dp"
-            android:text="Vin Diesel’s Dominic  Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic  Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic  Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic  Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic  Toretto is leading a quiet life off the grid with Letty and his son"
+            android:text="@string/text_exsample"
             android:textColor="@color/gray_8D"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -119,7 +121,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:text="Random film"
+        android:text="@string/name_exsample"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -127,6 +129,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
+        android:contentDescription="@string/back_button"
         android:id="@+id/backButton"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -144,6 +147,7 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <ImageButton
+        android:contentDescription="@string/favorite_button"
         android:id="@+id/favoriteButton"
         android:layout_width="45sp"
         android:layout_height="45sp"
