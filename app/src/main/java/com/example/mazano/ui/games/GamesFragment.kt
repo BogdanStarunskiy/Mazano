@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.navigation.findNavController
 import com.example.mazano.R
+import com.example.mazano.core.base_fragment.BaseFragment
 import com.example.mazano.databinding.FragmentGamesBinding
-import com.example.mazano.utils.BaseFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase

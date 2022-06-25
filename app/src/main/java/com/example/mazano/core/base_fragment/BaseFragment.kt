@@ -1,4 +1,4 @@
-package com.example.mazano.utils
+package com.example.mazano.core.base_fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

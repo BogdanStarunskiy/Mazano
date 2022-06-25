@@ -4,10 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.mazano.models.movie.MovieModel
+import com.example.mazano.models.movie.Result
 import com.example.mazano.ui.movies.database.dao.MovieDAO
 
-@Database (entities = [MovieModel::class], version =  1)
+@Database (entities = [Result::class], version =  1)
 abstract class MovieDatabase: RoomDatabase() {
     abstract fun getMovieDao(): MovieDAO
 

@@ -3,11 +3,12 @@ package com.example.mazano.ui.auth
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import androidx.core.view.isVisible
 import androidx.navigation.findNavController
 import com.example.mazano.R
+import com.example.mazano.core.base_fragment.BaseFragment
 import com.example.mazano.databinding.FragmentAuthBinding
-import com.example.mazano.utils.BaseFragment
+import com.example.mazano.utils.extentions.invisible
+import com.example.mazano.utils.extentions.isVisible
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -26,7 +27,7 @@ class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::infl
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_authFragment_to_gamesFragment)
-                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).isVisible = true
+                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).isVisible()
 
                     } else {
                         Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
@@ -41,7 +42,7 @@ class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::infl
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_authFragment_to_gamesFragment)
-                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).isVisible = true
+                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).isVisible()
                     } else {
                         Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
                     }
@@ -51,7 +52,7 @@ class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::infl
 
     override fun onStart() {
         super.onStart()
-        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).isVisible = false
+        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).invisible()
     }
 
 }
