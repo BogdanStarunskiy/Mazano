@@ -12,12 +12,12 @@
         android:id="@+id/film_logo"
         android:layout_width="match_parent"
         android:layout_height="220sp"
+        android:contentDescription="@string/film_head_image"
         app:layout_constraintBottom_toTopOf="@+id/materialCardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@null" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
@@ -39,33 +39,34 @@
             android:layout_marginHorizontal="330dp"
             android:layout_marginVertical="10dp"
             android:background="@null"
+            android:contentDescription="@string/play_button"
             android:padding="5dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_play_button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:contentDescription="@null" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="10dp"
-            android:text="@string/year"
+            android:text="@string/Year"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/filmYear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="50dp"
-            android:text="2020"
+            android:text="@string/Year_exsample"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,33 +76,35 @@
             android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold" />
+
         <TextView
             android:id="@+id/filmDuration"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="140dp"
             android:layout_marginVertical="50dp"
-            android:text="2 h 20 min"
+            android:text="@string/time_exsample"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
+            android:textStyle="bold" />
+
         <View
-            android:layout_marginHorizontal="120dp"
-            android:layout_marginVertical="10dp"
             android:layout_width="1dp"
             android:layout_height="80dp"
+            android:layout_marginHorizontal="120dp"
+            android:layout_marginVertical="10dp"
             android:layout_weight="1"
             android:background="@color/black" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="105dp"
-            android:text="@string/description"
+            android:text="@string/film_description"
             android:textColor="@color/white"
             android:textSize="33sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/movieDescription"
@@ -109,28 +112,26 @@
             android:layout_height="315dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="160dp"
-            android:text="Vin Diesel’s Dominic  Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic  Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic  Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic  Toretto is leading a quiet life off the grid with Letty and his son.Vin Diesel’s Dominic  Toretto is leading a quiet life off the grid with Letty and his son"
+            android:text="@string/text_exsample"
             android:textColor="@color/gray_8D"
             android:textSize="20sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
+            android:textStyle="bold" />
 
 
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
-        android:layout_marginBottom="10dp"
         android:id="@+id/filmName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:text="Random film"
+        android:layout_marginBottom="10dp"
+        android:text="@string/name_exsample"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/film_logo"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/backButton"
@@ -139,6 +140,7 @@
         android:layout_marginHorizontal="5dp"
         android:layout_marginVertical="5dp"
         android:background="@null"
+        android:contentDescription="@string/back_button"
         android:padding="5sp"
         android:scaleType="centerCrop"
         android:src="@drawable/left_arrow"
@@ -146,9 +148,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.013"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        android:contentDescription="@null" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/favoriteButton"
@@ -157,6 +157,7 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginVertical="0dp"
         android:background="@null"
+        android:contentDescription="@string/favorite_button"
         android:padding="5sp"
         android:scaleType="centerCrop"
         android:src="@drawable/bookmark"
@@ -164,9 +165,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        android:contentDescription="@null" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
