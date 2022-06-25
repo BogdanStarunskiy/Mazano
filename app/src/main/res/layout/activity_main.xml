@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:elevation="4545454545454dp"
         app:cbn_background="@color/bottomNavDefaultColor"
-        app:cbn_curve_radius="15dp"
+        app:cbn_curve_radius="27dp"
         app:cbn_fabColor="@color/bottomNavDefaultColor"
         app:cbn_height="76dp"
         app:cbn_iconColor="@color/bottomNavUnselectedColor"
