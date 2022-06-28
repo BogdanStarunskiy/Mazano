@@ -13,6 +13,7 @@
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/drawable/ic_popcorn.xml" value="0.1935" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/drawable/ic_search.xml" value="0.1935" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/drawable/ic_settings.xml" value="0.1935" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/drawable/ic_tv.xml" value="0.1935" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/category_recycler_item.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_auth.xml" value="0.3625" />
@@ -27,6 +28,7 @@
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_welcome_books.xml" value="0.22" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_welcome_games.xml" value="0.3625" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_welcome_movies.xml" value="0.3625" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_welcome_series.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/item_category_rv_item.xml" value="0.3625" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/recycler_item.xml" value="0.5041705282669138" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Mazano/app/src/main/res/layout/search_recycler_item.xml" value="0.5" />

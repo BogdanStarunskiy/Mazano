@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigationItems = mutableListOf(
             CurvedBottomNavigation.Model(GAMES_ITEM, "", R.drawable.ic_controller),
             CurvedBottomNavigation.Model(MOVIES_ITEM, "", R.drawable.ic_popcorn),
-            CurvedBottomNavigation.Model(SERIES_ITEM, "", R.drawable.ic_book),
+            CurvedBottomNavigation.Model(SERIES_ITEM, "", R.drawable.ic_tv),
             CurvedBottomNavigation.Model(PROFILE_ITEM, "", R.drawable.ic_profile),
             CurvedBottomNavigation.Model(SEARCH_ITEM, "", R.drawable.ic_search)
 

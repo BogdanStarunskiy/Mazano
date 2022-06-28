@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/crimson"
-    tools:context=".ui.welcome_screens.books.WelcomeSeriesFragment">
+    tools:context=".ui.welcome_screens.series.WelcomeSeriesFragment">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/seriesAnimation"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/reading_book" />
+        app:lottie_rawRes="@raw/tv_watch" />
 
 
     <com.google.android.material.textview.MaterialTextView
