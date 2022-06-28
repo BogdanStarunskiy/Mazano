@@ -9,6 +9,7 @@ import com.example.mazano.core.base_fragment.BaseFragment
 import com.example.mazano.databinding.FragmentAuthBinding
 import com.example.mazano.utils.extentions.invisible
 import com.example.mazano.utils.extentions.isVisible
+import com.example.mazano.utils.extentions.visible
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -27,7 +28,7 @@ class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::infl
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_authFragment_to_gamesFragment)
-                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).isVisible()
+                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).visible()
 
                     } else {
                         Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
@@ -42,7 +43,7 @@ class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::infl
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_authFragment_to_gamesFragment)
-                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).isVisible()
+                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).visible()
                     } else {
                         Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
                     }
