@@ -6,12 +6,6 @@
     app:startDestination="@id/gamesFragment">
 
     <fragment
-        android:id="@+id/booksFragment"
-        android:name="com.example.mazano.ui.books.BooksFragment"
-        android:label="fragment_books"
-        tools:layout="@layout/fragment_books" >
-    </fragment>
-    <fragment
         android:id="@+id/authFragment"
         android:name="com.example.mazano.ui.auth.AuthFragment"
         android:label="fragment_auth"
@@ -44,4 +38,9 @@
         android:name="com.example.mazano.ui.search.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/seriesFragment"
+        android:name="com.example.mazano.ui.series.SeriesFragment"
+        android:label="fragment_series"
+        tools:layout="@layout/fragment_series" />
 </navigation>

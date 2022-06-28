@@ -12,7 +12,7 @@
         android:icon="@drawable/ic_popcorn"
       />
     <item
-        android:id="@+id/booksFragment"
+        android:id="@+id/seriesFragment"
         android:title=""
         android:icon="@drawable/ic_book"
         />

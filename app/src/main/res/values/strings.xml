@@ -3,7 +3,7 @@
     <string name="games">Games</string>
     <string name="movies">Movies</string>
     <string name="settings">Settings</string>
-    <string name="books">Books</string>
+    <string name="series">Series</string>
     <string name="search">Search</string>
     <string name="mazano_logo">Mazano logo</string>
     <!-- Auth -->
@@ -29,10 +29,10 @@
     <string name="year">Year</string>
     <string name="description">Description:</string>
     <string name="saved">Saved</string>
-    <string name="welcomeBooks1">And finally here you can find</string>
-    <string name="welcomeBooks2">book</string>
-    <string name="welcomeBooks4">the</string>
-    <string name="welcomeBooks3">you want to read!</string>
+    <string name="welcomeSeries1">And finally here you can find</string>
+    <string name="welcomeSeries2">TV series</string>
+    <string name="welcomeSeries4">the</string>
+    <string name="welcomeSeries3">that you enjoy!</string>
     <string name="getStarted">Get started</string>
     <string name="welcomeGames1">And also here you can find</string>
     <string name="welcomeGames2">the</string>

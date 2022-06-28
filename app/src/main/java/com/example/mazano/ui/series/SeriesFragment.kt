@@ -1,16 +1,16 @@
-package com.example.mazano.ui.books
+package com.example.mazano.ui.series
 
 import android.os.Bundle
 import com.example.mazano.core.base_fragment.BaseFragment
-import com.example.mazano.databinding.FragmentBooksBinding
+import com.example.mazano.databinding.FragmentSeriesBinding
 
 
-class BooksFragment : BaseFragment<FragmentBooksBinding>(FragmentBooksBinding::inflate) {
+class SeriesFragment : BaseFragment<FragmentSeriesBinding>(FragmentSeriesBinding::inflate) {
 
     companion object {
         @JvmStatic
         fun newInstance() =
-            BooksFragment().apply {
+            SeriesFragment().apply {
                 arguments = Bundle().apply {
 
                 }

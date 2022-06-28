@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/crimson"
-    tools:context=".ui.welcome_screens.books.WelcomeBooksFragment">
+    tools:context=".ui.welcome_screens.books.WelcomeSeriesFragment">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/booksAnimation"
+        android:id="@+id/seriesAnimation"
         android:layout_width="match_parent"
         android:layout_height="289dp"
         android:scaleX="-1.6"
@@ -29,10 +29,10 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="19dp"
         android:padding="5dp"
-        android:text="@string/welcomeBooks1"
+        android:text="@string/welcomeSeries1"
         android:textColor="@color/white"
         android:textSize="28sp"
-        app:layout_constraintTop_toBottomOf="@id/booksAnimation"
+        app:layout_constraintTop_toBottomOf="@id/seriesAnimation"
 
         />
 
@@ -40,9 +40,8 @@
         android:id="@+id/welcomeBooks4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
         android:padding="5dp"
-        android:text="@string/welcomeBooks4"
+        android:text="@string/welcomeSeries4"
         android:textColor="@color/white"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="@+id/welcomeBooks1"
@@ -53,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:text="@string/welcomeBooks2"
+        android:text="@string/welcomeSeries2"
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -65,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:text="@string/welcomeBooks3"
+        android:text="@string/welcomeSeries3"
         android:textColor="@color/white"
         android:textSize="28sp"
         app:layout_constraintStart_toEndOf="@+id/welcomeBooks2"

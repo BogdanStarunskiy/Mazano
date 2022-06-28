@@ -8,7 +8,7 @@
     tools:context=".ui.welcome_screens.games.WelcomeGamesFragment">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/booksAnimation"
+        android:id="@+id/gamesAnimation"
         android:layout_width="match_parent"
         android:layout_height="289dp"
         android:scaleX="-1.6"
@@ -33,7 +33,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="28sp"
-        app:layout_constraintTop_toBottomOf="@id/booksAnimation"
+        app:layout_constraintTop_toBottomOf="@id/gamesAnimation"
 
         />
 
