@@ -20,7 +20,6 @@
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/tv_watch" />
 
-
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/welcomeBooks1"
         android:layout_width="match_parent"
