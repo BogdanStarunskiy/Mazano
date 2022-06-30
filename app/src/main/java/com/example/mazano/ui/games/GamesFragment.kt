@@ -14,16 +14,12 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class GamesFragment : BaseFragment<FragmentGamesBinding>(FragmentGamesBinding::inflate) {
-    private lateinit var auth: FirebaseAuth
     private lateinit var gamesViewModel: GamesViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        auth = Firebase.auth
-        val currentUser = auth.currentUser
-        if(currentUser == null)
-            requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_gamesFragment_to_authFragment)
         gamesViewModel = ViewModelProvider(this)[GamesViewModel::class.java]
+        gamesViewModel.checkUserAuth(requireActivity())
         gamesViewModel.getGamesMovies()
     }
 
