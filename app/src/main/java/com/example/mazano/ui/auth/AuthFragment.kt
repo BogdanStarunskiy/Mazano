@@ -3,6 +3,7 @@ package com.example.mazano.ui.auth
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.example.mazano.R
 import com.example.mazano.core.base_fragment.BaseFragment
@@ -16,38 +17,23 @@ import com.google.firebase.ktx.Firebase
 import com.qamar.curvedbottomnaviagtion.CurvedBottomNavigation
 
 class AuthFragment : BaseFragment<FragmentAuthBinding>(FragmentAuthBinding::inflate) {
-    private lateinit var auth: FirebaseAuth
-
+    private lateinit var authViewModel: AuthViewModel
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        auth = Firebase.auth
+        authViewModel = ViewModelProvider(this)[AuthViewModel::class.java]
         binding.signInButton.setOnClickListener {
-            val email = binding.email.text.toString()
-            val password = binding.password.text.toString()
-            auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_authFragment_to_gamesFragment)
-                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).visible()
-
-                    } else {
-                        Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
-                    }
-                }
+            authViewModel.signUp(
+                binding.email.text.toString(),
+                binding.password.text.toString(),
+                requireActivity()
+            )
         }
-
         binding.loginButton.setOnClickListener {
-            val email = binding.email.text.toString()
-            val password = binding.password.text.toString()
-            auth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        requireActivity().findNavController(R.id.fragmentContainerView).navigate(R.id.action_authFragment_to_gamesFragment)
-                        requireActivity().findViewById<CurvedBottomNavigation>(R.id.bottomNavigation).visible()
-                    } else {
-                        Toast.makeText(context, "Authentication failed.", Toast.LENGTH_SHORT).show()
-                    }
-                }
+            authViewModel.login(
+                binding.email.text.toString(),
+                binding.password.text.toString(),
+                requireActivity()
+            )
         }
     }
 
