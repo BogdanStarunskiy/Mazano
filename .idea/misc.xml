@@ -38,8 +38,12 @@
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_auth.xml" value="0.25" />
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_books.xml" value="0.25" />
+        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_details.xml" value="0.2" />
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_games.xml" value="0.25" />
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_movies.xml" value="0.25" />
+        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_welcome_games.xml" value="0.25" />
+        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_welcome_movies.xml" value="0.176" />
+        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_welcome_series.xml" value="0.264" />
       </map>
     </option>
   </component>
