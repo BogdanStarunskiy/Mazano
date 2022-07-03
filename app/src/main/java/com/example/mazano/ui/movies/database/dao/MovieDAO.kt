@@ -2,17 +2,17 @@ package com.example.mazano.ui.movies.database.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.mazano.models.movie.Result
+import com.example.mazano.models.movie.MovieDatabaseModel
 
 @Dao
 interface MovieDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insertMovieList(result: Result)
+    fun insertMovieList(movieDatabaseModel: MovieDatabaseModel)
 
     @Update
-    fun updateMovieList(result: Result)
+    fun updateMovieList(movieDatabaseModel: MovieDatabaseModel)
 
-    @Query("SELECT * from movies")
-    fun getAllMovies(): LiveData<Result>
+    @Query("SELECT * from movieEntity")
+    fun getAllMovies(): LiveData<MovieDatabaseModel>
 
 }

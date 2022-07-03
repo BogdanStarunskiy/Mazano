@@ -44,6 +44,15 @@
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_welcome_games.xml" value="0.25" />
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_welcome_movies.xml" value="0.176" />
         <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_welcome_series.xml" value="0.264" />
+        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/fragment_search.xml" value="0.1644021739130435" />
+        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/item_category_rv_item.xml" value="0.25" />
+        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/recycler_item.xml" value="0.25" />
+        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/search_recycler_item.xml" value="0.25" />
+        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/menu/menu.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/drawable/ic_play_button.xml" value="0.19" />
+        <entry key="..\:/Users/Eugene/StudioProjects/Mazano/app/src/main/res/layout/fragment_details.xml" value="0.264" />
+        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/recycler_item.xml" value="0.536" />
+        <entry key="..\:/Users/Bogdan/AndroidStudioProjects/Mazano/app/src/main/res/layout/search_recycler_item.xml" value="0.4" />
       </map>
     </option>
   </component>

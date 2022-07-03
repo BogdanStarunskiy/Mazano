@@ -1,11 +1,16 @@
 package com.example.mazano.models.movie
 
-data class Result(
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "movieEntity")
+data class MovieDatabaseModel(
+    @PrimaryKey
+    val id: String,
     val adult: Boolean,
     val backdrop_path: String,
-    val genre_ids: List<Int>,
-    val id: Int,
     val original_language: String,
+    val genre: String,
     val original_title: String,
     val overview: String,
     val popularity: Double,

@@ -1,26 +1,24 @@
 package com.example.mazano.ui.movies
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.mazano.models.movie.MovieModel
-import com.example.mazano.retrofit.movie.MovieService
-import com.example.mazano.utils.MOVIE_API_KEY
+import com.example.mazano.retrofit.movie.MovieAPI
+import com.example.mazano.ui.movies.database.repository.MovieRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import javax.inject.Inject
 
 @HiltViewModel
-class MoviesViewModel @Inject constructor(private val movieService: MovieService): ViewModel() {
-    fun getPopularMovies(){
-        movieService.getPopularMovies(MOVIE_API_KEY).enqueue(object: Callback<MovieModel> {
-            override fun onResponse(call: Call<MovieModel>, response: Response<MovieModel>) {
-                val result = response.body()
-            }
+class MoviesViewModel @Inject constructor(
+    private val repository: MovieRepository
+) : ViewModel() {
+    val movies = MutableLiveData<MovieModel>()
+    fun getMoviesFromServer() {
+        movies.value = repository.getMoviesFromServer()
+    }
 
-            override fun onFailure(call: Call<MovieModel>, t: Throwable) {
-                TODO("Not yet implemented")
-            }
-        })
+    fun getMovies(): LiveData<MovieModel> {
+        return movies
     }
 }
