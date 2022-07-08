@@ -1,6 +1,7 @@
 package com.example.mazano.ui.games
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
@@ -20,9 +21,14 @@ class GamesFragment : BaseFragment<FragmentGamesBinding>(FragmentGamesBinding::i
         super.onViewCreated(view, savedInstanceState)
         gamesViewModel = ViewModelProvider(this)[GamesViewModel::class.java]
         gamesViewModel.checkUserAuth(requireActivity())
-        gamesViewModel.getGamesMovies()
-    }
+        initObservers()
 
+    }
+    private fun initObservers(){
+        gamesViewModel.getGames().observe(viewLifecycleOwner){
+            Log.wtf("SIMPLE_TAG","$it")
+        }
+    }
 
 
 }
